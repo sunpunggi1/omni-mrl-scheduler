@@ -1,0 +1,440 @@
+{
+  "benchmarks": {
+    "W1_PAI_Mixed": {
+      "best_baseline": "L2Norm",
+      "best_baseline_gh_mean": 4.209756451120645,
+      "evo_dist_gh_mean": 5.264418671657186,
+      "evo_full_gh_mean": 5.22945181152325,
+      "relative_improvement_pct": -25.052808464864697,
+      "wins": 0,
+      "num_seeds": 10,
+      "t_stat": -4.5129752723246535,
+      "p_val_approx": 2.0916686963345866e-05,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 7.482025592857331,
+          "gh_std": 2.319275363299307,
+          "stranded_mean": 17.786187716150998,
+          "active_node_hr_mean": 1807.1507771964486,
+          "latency_us_mean": 0.21322980987095153
+        },
+        "BestFit": {
+          "gh_mean": 4.226437653209717,
+          "gh_std": 1.9268118477651301,
+          "stranded_mean": 12.23202645943563,
+          "active_node_hr_mean": 1788.28899906413,
+          "latency_us_mean": 7.6709175855116
+        },
+        "DotProduct": {
+          "gh_mean": 4.354100765579426,
+          "gh_std": 1.9213435940715315,
+          "stranded_mean": 12.458699742029324,
+          "active_node_hr_mean": 1792.861339097052,
+          "latency_us_mean": 12.793220157335972
+        },
+        "L2Norm": {
+          "gh_mean": 4.209756451120645,
+          "gh_std": 1.6422084380156274,
+          "stranded_mean": 12.548529839301324,
+          "active_node_hr_mean": 1792.622842297334,
+          "latency_us_mean": 12.37318873178852
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 9.475332656662077,
+          "gh_std": 2.5921817781578995,
+          "stranded_mean": 20.991064028264432,
+          "active_node_hr_mean": 1859.2441694823362,
+          "latency_us_mean": 383.90510680559635
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 5.22945181152325,
+          "gh_std": 2.072764726846219,
+          "stranded_mean": 13.656671861783423,
+          "active_node_hr_mean": 1772.8159315083947,
+          "latency_us_mean": 71.28223391398959
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 5.264418671657186,
+          "gh_std": 2.045795765602228,
+          "stranded_mean": 13.96237256249783,
+          "active_node_hr_mean": 1772.9112645745663,
+          "latency_us_mean": 67.90157534465965
+        },
+        "LindyPack_4T": {
+          "gh_mean": 5.071439440870664,
+          "gh_std": 1.820670010282524,
+          "stranded_mean": 13.799116198746919,
+          "active_node_hr_mean": 1782.4208742298445,
+          "latency_us_mean": 68.36722191810694
+        }
+      }
+    },
+    "W2_Regime_Shift": {
+      "best_baseline": "FGD_Adaptive",
+      "best_baseline_gh_mean": 24.639490582039734,
+      "evo_dist_gh_mean": 24.79708084661614,
+      "evo_full_gh_mean": 24.529680417244982,
+      "relative_improvement_pct": -0.6395841019995642,
+      "wins": 4,
+      "num_seeds": 10,
+      "t_stat": -0.7139154726707558,
+      "p_val_approx": 0.5008926038648804,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 25.083315895723093,
+          "gh_std": 0.8667352327262875,
+          "stranded_mean": 5.587360860820343,
+          "active_node_hr_mean": 1755.925864747714,
+          "latency_us_mean": 0.2786448562483716
+        },
+        "BestFit": {
+          "gh_mean": 24.743111876405713,
+          "gh_std": 1.1551475604530108,
+          "stranded_mean": 5.33348493085486,
+          "active_node_hr_mean": 1769.3388530988245,
+          "latency_us_mean": 8.9879878163004
+        },
+        "DotProduct": {
+          "gh_mean": 24.693137998284968,
+          "gh_std": 1.0820638568549577,
+          "stranded_mean": 5.478089454136578,
+          "active_node_hr_mean": 1774.806765019225,
+          "latency_us_mean": 14.380185483912925
+        },
+        "L2Norm": {
+          "gh_mean": 24.681614675393227,
+          "gh_std": 1.2403914500721134,
+          "stranded_mean": 5.225687251441128,
+          "active_node_hr_mean": 1758.0593276714535,
+          "latency_us_mean": 11.781655095438861
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 24.639490582039734,
+          "gh_std": 0.9604793393733819,
+          "stranded_mean": 5.45076746138353,
+          "active_node_hr_mean": 1827.394314418647,
+          "latency_us_mean": 339.84721466767417
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 24.529680417244982,
+          "gh_std": 1.3116050539792148,
+          "stranded_mean": 4.651658998611743,
+          "active_node_hr_mean": 1741.3428770867845,
+          "latency_us_mean": 54.95840122477207
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 24.79708084661614,
+          "gh_std": 1.1926970709496674,
+          "stranded_mean": 4.633230324536173,
+          "active_node_hr_mean": 1737.3861330583088,
+          "latency_us_mean": 69.37104122643578
+        },
+        "LindyPack_4T": {
+          "gh_mean": 24.658532329613116,
+          "gh_std": 1.1841221757411915,
+          "stranded_mean": 4.690074920583654,
+          "active_node_hr_mean": 1739.8861596681186,
+          "latency_us_mean": 70.67839117989845
+        }
+      }
+    },
+    "W3_Heavy_Straggler": {
+      "best_baseline": "L2Norm",
+      "best_baseline_gh_mean": 2.723973542752829,
+      "evo_dist_gh_mean": 2.2310431409995446,
+      "evo_full_gh_mean": 2.230921603870822,
+      "relative_improvement_pct": 18.096005486717477,
+      "wins": 9,
+      "num_seeds": 10,
+      "t_stat": 2.6718699506138917,
+      "p_val_approx": 0.011766755181433155,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 3.37931619541716,
+          "gh_std": 1.2557450842444025,
+          "stranded_mean": 13.797345234589281,
+          "active_node_hr_mean": 2879.6029317542234,
+          "latency_us_mean": 0.27197349426925455
+        },
+        "BestFit": {
+          "gh_mean": 3.152045203428959,
+          "gh_std": 1.3181624893985688,
+          "stranded_mean": 13.08844340090327,
+          "active_node_hr_mean": 3006.415895318972,
+          "latency_us_mean": 9.576891264686187
+        },
+        "DotProduct": {
+          "gh_mean": 3.3103760710195886,
+          "gh_std": 1.393874440658251,
+          "stranded_mean": 13.794959163519717,
+          "active_node_hr_mean": 3038.2442915121155,
+          "latency_us_mean": 14.370659228080019
+        },
+        "L2Norm": {
+          "gh_mean": 2.723973542752829,
+          "gh_std": 1.2792389351220166,
+          "stranded_mean": 12.491287234003426,
+          "active_node_hr_mean": 2978.03957959694,
+          "latency_us_mean": 12.817883192499929
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 6.358544297569311,
+          "gh_std": 1.1333135213436778,
+          "stranded_mean": 19.352107648640327,
+          "active_node_hr_mean": 3092.7492319732664,
+          "latency_us_mean": 382.46877906655084
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 2.230921603870822,
+          "gh_std": 1.047179968110829,
+          "stranded_mean": 11.948812836191447,
+          "active_node_hr_mean": 2924.007808448932,
+          "latency_us_mean": 69.65430280757353
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 2.2310431409995446,
+          "gh_std": 1.047244515828604,
+          "stranded_mean": 11.951316842601702,
+          "active_node_hr_mean": 2924.3123376048948,
+          "latency_us_mean": 67.3097022113191
+        },
+        "LindyPack_4T": {
+          "gh_mean": 2.6346381187885655,
+          "gh_std": 1.4045024752628388,
+          "stranded_mean": 12.142307751926893,
+          "active_node_hr_mean": 2921.025299908677,
+          "latency_us_mean": 68.47031258349487
+        }
+      }
+    },
+    "W4_Memoryless_OOD": {
+      "best_baseline": "FirstFit",
+      "best_baseline_gh_mean": 7.35611597369869,
+      "evo_dist_gh_mean": 6.984589627716256,
+      "evo_full_gh_mean": 6.794789791013514,
+      "relative_improvement_pct": 5.050577605230833,
+      "wins": 9,
+      "num_seeds": 10,
+      "t_stat": 3.4626910277589698,
+      "p_val_approx": 0.001095969342589674,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 7.35611597369869,
+          "gh_std": 1.0471848821263265,
+          "stranded_mean": 13.985551638224612,
+          "active_node_hr_mean": 1745.8349858335991,
+          "latency_us_mean": 0.26328977367118717
+        },
+        "BestFit": {
+          "gh_mean": 7.552867098247735,
+          "gh_std": 1.111692136517316,
+          "stranded_mean": 14.819454097189716,
+          "active_node_hr_mean": 1755.4417562621134,
+          "latency_us_mean": 9.774865441021118
+        },
+        "DotProduct": {
+          "gh_mean": 7.806440080494016,
+          "gh_std": 1.2082653859580135,
+          "stranded_mean": 15.23838076941163,
+          "active_node_hr_mean": 1765.4901605599036,
+          "latency_us_mean": 14.613198298263654
+        },
+        "L2Norm": {
+          "gh_mean": 7.389272284775562,
+          "gh_std": 1.079731623011834,
+          "stranded_mean": 14.309996441071098,
+          "active_node_hr_mean": 1752.9435630855612,
+          "latency_us_mean": 11.859880806946142
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 14.2316588767811,
+          "gh_std": 1.3568649424045514,
+          "stranded_mean": 23.76147989508609,
+          "active_node_hr_mean": 1803.5314014193677,
+          "latency_us_mean": 362.8676344436744
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 6.794789791013514,
+          "gh_std": 1.0500212914822207,
+          "stranded_mean": 13.336868166577608,
+          "active_node_hr_mean": 1745.0021029626073,
+          "latency_us_mean": 71.09237878368126
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 6.984589627716256,
+          "gh_std": 1.0871095014802723,
+          "stranded_mean": 13.531409699610595,
+          "active_node_hr_mean": 1744.7029961991677,
+          "latency_us_mean": 74.85912707859366
+        },
+        "LindyPack_4T": {
+          "gh_mean": 7.176996588262237,
+          "gh_std": 0.981079143487749,
+          "stranded_mean": 14.001993054424053,
+          "active_node_hr_mean": 1746.8382122900407,
+          "latency_us_mean": 69.5538617757288
+        }
+      }
+    },
+    "W5_Skewed_Vec_OOD": {
+      "best_baseline": "BestFit",
+      "best_baseline_gh_mean": 9.134084029575158,
+      "evo_dist_gh_mean": 8.673096905180394,
+      "evo_full_gh_mean": 8.670926753246883,
+      "relative_improvement_pct": 5.046889462612108,
+      "wins": 7,
+      "num_seeds": 10,
+      "t_stat": 2.025587094833179,
+      "p_val_approx": 0.056166462598696315,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 9.82175980924964,
+          "gh_std": 1.6279509847841636,
+          "stranded_mean": 59.76838052188084,
+          "active_node_hr_mean": 2903.567402215137,
+          "latency_us_mean": 0.2839453746012419
+        },
+        "BestFit": {
+          "gh_mean": 9.134084029575158,
+          "gh_std": 2.0058925304160264,
+          "stranded_mean": 58.87353544854409,
+          "active_node_hr_mean": 2886.7004055969883,
+          "latency_us_mean": 9.04779259357242
+        },
+        "DotProduct": {
+          "gh_mean": 30.696448978145792,
+          "gh_std": 2.287527512900697,
+          "stranded_mean": 71.62556369718592,
+          "active_node_hr_mean": 3063.742725020238,
+          "latency_us_mean": 14.971303539856057
+        },
+        "L2Norm": {
+          "gh_mean": 9.149273159574138,
+          "gh_std": 2.0067795430202673,
+          "stranded_mean": 59.0253717455138,
+          "active_node_hr_mean": 2882.740529323759,
+          "latency_us_mean": 12.883807372833612
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 37.78916878163882,
+          "gh_std": 2.10587486971492,
+          "stranded_mean": 74.64989086260604,
+          "active_node_hr_mean": 3072.30988851611,
+          "latency_us_mean": 402.1298915818785
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 8.670926753246883,
+          "gh_std": 1.8382695340592914,
+          "stranded_mean": 58.64713800656142,
+          "active_node_hr_mean": 2886.994664741924,
+          "latency_us_mean": 59.532903275329865
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 8.673096905180394,
+          "gh_std": 1.8405679882072292,
+          "stranded_mean": 58.631568053579414,
+          "active_node_hr_mean": 2885.4265818829836,
+          "latency_us_mean": 51.98814338019838
+        },
+        "LindyPack_4T": {
+          "gh_mean": 8.872921388871685,
+          "gh_std": 2.119210387505982,
+          "stranded_mean": 58.76154328400759,
+          "active_node_hr_mean": 2883.76409935325,
+          "latency_us_mean": 59.82210703178051
+        }
+      }
+    },
+    "W6_Scale1024_OOD": {
+      "best_baseline": "L2Norm",
+      "best_baseline_gh_mean": 0.8744462153353272,
+      "evo_dist_gh_mean": 0.8650135725724926,
+      "evo_full_gh_mean": 0.8340418739373783,
+      "relative_improvement_pct": 1.0786990208674467,
+      "wins": 3,
+      "num_seeds": 5,
+      "t_stat": 0.17536387598763953,
+      "p_val_approx": 0.8792898082848689,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 0.9633282739289621,
+          "gh_std": 0.5899419893300748,
+          "stranded_mean": 5.051954350416264,
+          "active_node_hr_mean": 6707.712556176497,
+          "latency_us_mean": 0.254268616255924
+        },
+        "BestFit": {
+          "gh_mean": 0.9050134244116949,
+          "gh_std": 0.46907734554778885,
+          "stranded_mean": 4.617587002840909,
+          "active_node_hr_mean": 6689.495689002829,
+          "latency_us_mean": 7.7033477676849715
+        },
+        "DotProduct": {
+          "gh_mean": 0.9469580801574402,
+          "gh_std": 0.5537941612562521,
+          "stranded_mean": 4.766019723404712,
+          "active_node_hr_mean": 6711.584822780858,
+          "latency_us_mean": 11.586870155639662
+        },
+        "L2Norm": {
+          "gh_mean": 0.8744462153353272,
+          "gh_std": 0.4428533711115516,
+          "stranded_mean": 4.718308474146191,
+          "active_node_hr_mean": 6698.3829126288165,
+          "latency_us_mean": 9.93514745001832
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 1.1080754434856999,
+          "gh_std": 0.6028479167496523,
+          "stranded_mean": 5.622579460470085,
+          "active_node_hr_mean": 6756.420704465316,
+          "latency_us_mean": 283.0672140045632
+        },
+        "EvoSTF_Full": {
+          "gh_mean": 0.8340418739373783,
+          "gh_std": 0.4308613744950791,
+          "stranded_mean": 4.39631111391129,
+          "active_node_hr_mean": 6673.940042425017,
+          "latency_us_mean": 54.237323379189505
+        },
+        "EvoSTF_Dist": {
+          "gh_mean": 0.8650135725724926,
+          "gh_std": 0.40597953486257093,
+          "stranded_mean": 4.645240651170906,
+          "active_node_hr_mean": 6668.0914635539575,
+          "latency_us_mean": 54.00715072675939
+        },
+        "LindyPack_4T": {
+          "gh_mean": 0.8407232855243547,
+          "gh_std": 0.48948540808822555,
+          "stranded_mean": 4.7143796628659915,
+          "active_node_hr_mean": 6682.789453271161,
+          "latency_us_mean": 53.615966987305306
+        }
+      }
+    }
+  },
+  "ablation": {
+    "Full_Distilled": {
+      "W1_PAI_Mixed": 5.271773237376602,
+      "W2_Regime_Shift": 24.26367576295563,
+      "W3_Heavy_Straggler": 1.8171732106433254
+    },
+    "No_Temporal_Lindy": {
+      "W1_PAI_Mixed": 4.179577944052646,
+      "W2_Regime_Shift": 23.819480074741932,
+      "W3_Heavy_Straggler": 1.958161062468259
+    },
+    "No_Boundary_Buddy": {
+      "W1_PAI_Mixed": 5.4903498285386405,
+      "W2_Regime_Shift": 23.612820051965215,
+      "W3_Heavy_Straggler": 1.987454611463766
+    },
+    "No_Spatial_Vector": {
+      "W1_PAI_Mixed": 5.357895192657917,
+      "W2_Regime_Shift": 23.73026302599879,
+      "W3_Heavy_Straggler": 2.150806023917791
+    }
+  }
+}

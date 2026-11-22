@@ -1,0 +1,24 @@
+# Python 빌드 및 캐시 산출물
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# 가상 환경 및 IDE 설정
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# 대용량 공개 클러스터 트레이스 원본 CSV/ZIP (약 350MB+, `python download_traces.py`로 자동 다운로드 가능)
+data/
+*.zip
+
+# OS 임시 파일
+Thumbs.db
+.DS_Store

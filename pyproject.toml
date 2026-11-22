@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omni-lindy-scheduler"
+version = "11.1.0"
+description = "Omni-MRL (v11.1) / Omni-Lindy: 동적 AI/GPU 클러스터 시공간·해저드·이기종·토폴로지 통합 스케줄러 및 Kubernetes HTTP Extender"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.urls]
+Repository = "https://github.com/sunpunggi1/omni-mrl-scheduler"
+
+[project.scripts]
+omni-lindy-extender = "k8s_extender.server:main"
+
+[tool.setuptools]
+py-modules = [
+    "simulator",
+    "workloads",
+    "baselines",
+    "bigtech_baselines",
+    "stats_utils",
+    "b_lindy_discovery",
+    "adaptive_lindy",
+    "omni_mrl",
+    "trace_loader",
+    "reproduce_all",
+]
+packages = ["k8s_extender"]

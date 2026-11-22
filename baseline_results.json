@@ -1,0 +1,252 @@
+{
+  "W1_PAI_Mixed": {
+    "FirstFit": {
+      "gpu_hour_block_mean": 6.846714975043187,
+      "gpu_hour_block_std": 2.072527584684,
+      "job_block_mean": 1.2,
+      "stranded_gpu_mean": 17.308954064537723,
+      "active_node_hours_mean": 1814.2718725048392,
+      "latency_us_mean": 0.20470347890686735
+    },
+    "BestFit": {
+      "gpu_hour_block_mean": 4.3544904788527194,
+      "gpu_hour_block_std": 1.9664182681529208,
+      "job_block_mean": 0.63,
+      "stranded_gpu_mean": 12.183569845528938,
+      "active_node_hours_mean": 1774.7363230053081,
+      "latency_us_mean": 7.641729585693193
+    },
+    "DotProduct": {
+      "gpu_hour_block_mean": 4.425861204696352,
+      "gpu_hour_block_std": 1.8225188170970956,
+      "job_block_mean": 0.6449999999999999,
+      "stranded_gpu_mean": 11.988472830599715,
+      "active_node_hours_mean": 1783.3268572145905,
+      "latency_us_mean": 11.502583541586521
+    },
+    "L2Norm": {
+      "gpu_hour_block_mean": 4.419812402950211,
+      "gpu_hour_block_std": 1.6918816672310069,
+      "job_block_mean": 0.6649999999999999,
+      "stranded_gpu_mean": 12.026032642487719,
+      "active_node_hours_mean": 1785.3024683966673,
+      "latency_us_mean": 9.940199794704448
+    },
+    "FGD_Static": {
+      "gpu_hour_block_mean": 8.81462905799575,
+      "gpu_hour_block_std": 1.9045337396829591,
+      "job_block_mean": 1.24,
+      "stranded_gpu_mean": 20.195110803077736,
+      "active_node_hours_mean": 1860.0376304706406,
+      "latency_us_mean": 225.5156633721882
+    },
+    "FGD_Adaptive": {
+      "gpu_hour_block_mean": 8.527340297601706,
+      "gpu_hour_block_std": 2.272750601798018,
+      "job_block_mean": 1.2650000000000001,
+      "stranded_gpu_mean": 19.426928689994096,
+      "active_node_hours_mean": 1845.890184208427,
+      "latency_us_mean": 295.90459666426875
+    }
+  },
+  "W2_Regime_Shift": {
+    "FirstFit": {
+      "gpu_hour_block_mean": 24.66958870882555,
+      "gpu_hour_block_std": 0.40510075628029263,
+      "job_block_mean": 5.665,
+      "stranded_gpu_mean": 5.344379317862439,
+      "active_node_hours_mean": 1822.2907779178277,
+      "latency_us_mean": 0.20331773474484707
+    },
+    "BestFit": {
+      "gpu_hour_block_mean": 24.14267045030269,
+      "gpu_hour_block_std": 1.1713216813172098,
+      "job_block_mean": 5.715000000000001,
+      "stranded_gpu_mean": 5.09454722009371,
+      "active_node_hours_mean": 1821.4924760964914,
+      "latency_us_mean": 7.799903962660198
+    },
+    "DotProduct": {
+      "gpu_hour_block_mean": 24.17499125811016,
+      "gpu_hour_block_std": 0.8239549109132462,
+      "job_block_mean": 5.7700000000000005,
+      "stranded_gpu_mean": 5.367415798805752,
+      "active_node_hours_mean": 1823.558099838568,
+      "latency_us_mean": 11.865361837469687
+    },
+    "L2Norm": {
+      "gpu_hour_block_mean": 24.074892988694618,
+      "gpu_hour_block_std": 1.1455797322032155,
+      "job_block_mean": 5.635,
+      "stranded_gpu_mean": 4.9824014700110535,
+      "active_node_hours_mean": 1819.25040343292,
+      "latency_us_mean": 10.234243333910118
+    },
+    "FGD_Static": {
+      "gpu_hour_block_mean": 24.76671205829109,
+      "gpu_hour_block_std": 0.9289899923524848,
+      "job_block_mean": 5.74,
+      "stranded_gpu_mean": 6.305794777612967,
+      "active_node_hours_mean": 1873.4808916677277,
+      "latency_us_mean": 233.97393456826512
+    },
+    "FGD_Adaptive": {
+      "gpu_hour_block_mean": 24.009595145669454,
+      "gpu_hour_block_std": 0.7985850340958952,
+      "job_block_mean": 5.744999999999999,
+      "stranded_gpu_mean": 4.9940267522489545,
+      "active_node_hours_mean": 1886.8627832682373,
+      "latency_us_mean": 298.0576563183034
+    }
+  },
+  "W3_Heavy_Straggler": {
+    "FirstFit": {
+      "gpu_hour_block_mean": 2.6309275503787157,
+      "gpu_hour_block_std": 1.1781303518067499,
+      "job_block_mean": 0.8049999999999999,
+      "stranded_gpu_mean": 12.947996891600406,
+      "active_node_hours_mean": 2855.0740756583045,
+      "latency_us_mean": 0.2053093424753544
+    },
+    "BestFit": {
+      "gpu_hour_block_mean": 2.8862011554902223,
+      "gpu_hour_block_std": 1.2615000712428277,
+      "job_block_mean": 0.6950000000000001,
+      "stranded_gpu_mean": 12.963861449151977,
+      "active_node_hours_mean": 2978.902531374362,
+      "latency_us_mean": 7.486249600892407
+    },
+    "DotProduct": {
+      "gpu_hour_block_mean": 2.8939783409670126,
+      "gpu_hour_block_std": 1.6020258973467199,
+      "job_block_mean": 0.8800000000000001,
+      "stranded_gpu_mean": 13.404307085297782,
+      "active_node_hours_mean": 3007.0205616156863,
+      "latency_us_mean": 11.329185723469653
+    },
+    "L2Norm": {
+      "gpu_hour_block_mean": 2.3289190442407497,
+      "gpu_hour_block_std": 1.0647069805097598,
+      "job_block_mean": 0.6050000000000001,
+      "stranded_gpu_mean": 11.96722907121614,
+      "active_node_hours_mean": 2959.615292162661,
+      "latency_us_mean": 9.814755828306001
+    },
+    "FGD_Static": {
+      "gpu_hour_block_mean": 6.158628549573814,
+      "gpu_hour_block_std": 1.1413581644017947,
+      "job_block_mean": 1.2799999999999998,
+      "stranded_gpu_mean": 19.20839466136734,
+      "active_node_hours_mean": 3045.68205203282,
+      "latency_us_mean": 224.44960741831443
+    },
+    "FGD_Adaptive": {
+      "gpu_hour_block_mean": 6.416216718897781,
+      "gpu_hour_block_std": 1.254505819439638,
+      "job_block_mean": 1.4,
+      "stranded_gpu_mean": 19.252001551167943,
+      "active_node_hours_mean": 3074.6283515130094,
+      "latency_us_mean": 297.6266199285957
+    }
+  },
+  "W4_Memoryless_OOD": {
+    "FirstFit": {
+      "gpu_hour_block_mean": 7.6371074466207105,
+      "gpu_hour_block_std": 1.2001938612843042,
+      "job_block_mean": 1.69,
+      "stranded_gpu_mean": 13.949986033776293,
+      "active_node_hours_mean": 1736.6735275201045,
+      "latency_us_mean": 0.21430283013400792
+    },
+    "BestFit": {
+      "gpu_hour_block_mean": 7.626231233149895,
+      "gpu_hour_block_std": 1.1964708244559452,
+      "job_block_mean": 1.75,
+      "stranded_gpu_mean": 14.514466792594277,
+      "active_node_hours_mean": 1744.952528272222,
+      "latency_us_mean": 7.405991976401543
+    },
+    "DotProduct": {
+      "gpu_hour_block_mean": 7.888880746276554,
+      "gpu_hour_block_std": 1.279378224088276,
+      "job_block_mean": 1.7100000000000002,
+      "stranded_gpu_mean": 15.198772896013239,
+      "active_node_hours_mean": 1756.6136986909162,
+      "latency_us_mean": 11.209285741448713
+    },
+    "L2Norm": {
+      "gpu_hour_block_mean": 7.553653861903015,
+      "gpu_hour_block_std": 1.2535206430161712,
+      "job_block_mean": 1.7100000000000002,
+      "stranded_gpu_mean": 14.254664672368827,
+      "active_node_hours_mean": 1744.7351642160716,
+      "latency_us_mean": 9.659586941421804
+    },
+    "FGD_Static": {
+      "gpu_hour_block_mean": 14.133864860755747,
+      "gpu_hour_block_std": 0.9283064069534954,
+      "job_block_mean": 2.86,
+      "stranded_gpu_mean": 24.013479363161863,
+      "active_node_hours_mean": 1800.3623559680605,
+      "latency_us_mean": 217.6292334658148
+    },
+    "FGD_Adaptive": {
+      "gpu_hour_block_mean": 13.806465229281383,
+      "gpu_hour_block_std": 1.2986423626340995,
+      "job_block_mean": 2.7250000000000005,
+      "stranded_gpu_mean": 23.219645517327177,
+      "active_node_hours_mean": 1793.9699036574434,
+      "latency_us_mean": 285.7101089513342
+    }
+  },
+  "W5_Skewed_Vec_OOD": {
+    "FirstFit": {
+      "gpu_hour_block_mean": 9.860813871398028,
+      "gpu_hour_block_std": 2.0526783155933974,
+      "job_block_mean": 2.7199999999999998,
+      "stranded_gpu_mean": 59.125166719352464,
+      "active_node_hours_mean": 2847.116243459706,
+      "latency_us_mean": 0.20994754291917683
+    },
+    "BestFit": {
+      "gpu_hour_block_mean": 8.861357088136941,
+      "gpu_hour_block_std": 2.061037616978165,
+      "job_block_mean": 2.775,
+      "stranded_gpu_mean": 57.9680662992086,
+      "active_node_hours_mean": 2841.5586570367336,
+      "latency_us_mean": 7.414140120444239
+    },
+    "DotProduct": {
+      "gpu_hour_block_mean": 30.83348292357085,
+      "gpu_hour_block_std": 1.4138231300716473,
+      "job_block_mean": 5.64,
+      "stranded_gpu_mean": 71.60434853395068,
+      "active_node_hours_mean": 3035.2114189726517,
+      "latency_us_mean": 11.699212344480117
+    },
+    "L2Norm": {
+      "gpu_hour_block_mean": 9.01489454481764,
+      "gpu_hour_block_std": 2.2682078771234275,
+      "job_block_mean": 2.755,
+      "stranded_gpu_mean": 58.26762712800397,
+      "active_node_hours_mean": 2838.3241403481506,
+      "latency_us_mean": 9.556905259161974
+    },
+    "FGD_Static": {
+      "gpu_hour_block_mean": 29.65689347589988,
+      "gpu_hour_block_std": 1.9213839109156903,
+      "job_block_mean": 5.985000000000001,
+      "stranded_gpu_mean": 70.78563465809677,
+      "active_node_hours_mean": 2990.877776122731,
+      "latency_us_mean": 211.88335249063184
+    },
+    "FGD_Adaptive": {
+      "gpu_hour_block_mean": 37.83268944005282,
+      "gpu_hour_block_std": 0.8712602888669801,
+      "job_block_mean": 7.69,
+      "stranded_gpu_mean": 74.57068629351974,
+      "active_node_hours_mean": 3041.8209990349965,
+      "latency_us_mean": 316.28341955146
+    }
+  }
+}

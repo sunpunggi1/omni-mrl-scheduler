@@ -1,0 +1,392 @@
+{
+  "theta": {
+    "w_gpu": 1.0,
+    "w_res": 0.822,
+    "w_imb": 0.161,
+    "w_pristine": 1.302,
+    "w_b4": 0.493,
+    "w_whole": 0.344,
+    "w_lindy": 0.446,
+    "tau": 7.15
+  },
+  "results": {
+    "W1_PAI_Mixed": {
+      "best_sota": "L2Norm",
+      "sota_gh": 4.209756451120645,
+      "b_lindy_gh": 3.8578029579714084,
+      "b_noage_gh": 3.9887292674454145,
+      "rel_improvement_pct": 8.360424106139115,
+      "wins": 6,
+      "num_seeds": 10,
+      "t_stat": 1.9325534594790168,
+      "p_val_approx": 0.06845060448697403,
+      "speedup_vs_fgd": 9.720857881567193,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 7.482025592857331,
+          "gh_std": 2.319275363299307,
+          "stranded_mean": 17.786187716150998,
+          "active_node_hr_mean": 1807.1507771964486,
+          "latency_us_mean": 0.22817508565013633
+        },
+        "BestFit": {
+          "gh_mean": 4.226437653209717,
+          "gh_std": 1.9268118477651301,
+          "stranded_mean": 12.23202645943563,
+          "active_node_hr_mean": 1788.28899906413,
+          "latency_us_mean": 8.077531218983141
+        },
+        "DotProduct": {
+          "gh_mean": 4.354100765579426,
+          "gh_std": 1.9213435940715315,
+          "stranded_mean": 12.458699742029324,
+          "active_node_hr_mean": 1792.861339097052,
+          "latency_us_mean": 12.586641385808278
+        },
+        "L2Norm": {
+          "gh_mean": 4.209756451120645,
+          "gh_std": 1.6422084380156274,
+          "stranded_mean": 12.548529839301324,
+          "active_node_hr_mean": 1792.622842297334,
+          "latency_us_mean": 10.623158649026582
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 9.475332656662077,
+          "gh_std": 2.5921817781578995,
+          "stranded_mean": 20.991064028264432,
+          "active_node_hr_mean": 1859.2441694823362,
+          "latency_us_mean": 323.9029035157081
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 3.9887292674454145,
+          "gh_std": 1.5066579021345274,
+          "stranded_mean": 12.112188678632025,
+          "active_node_hr_mean": 1782.6543787393803,
+          "latency_us_mean": 26.260200336062336
+        },
+        "B-LindyPack": {
+          "gh_mean": 3.8578029579714084,
+          "gh_std": 1.8262181464492808,
+          "stranded_mean": 11.287790394858742,
+          "active_node_hr_mean": 1772.6621176173921,
+          "latency_us_mean": 33.320403143625484
+        }
+      }
+    },
+    "W2_Regime_Shift": {
+      "best_sota": "FGD_Adaptive",
+      "sota_gh": 24.639490582039734,
+      "b_lindy_gh": 24.447564879871287,
+      "b_noage_gh": 24.66499885283027,
+      "rel_improvement_pct": 0.7789353498580289,
+      "wins": 8,
+      "num_seeds": 10,
+      "t_stat": 1.2555493416886978,
+      "p_val_approx": 0.23651470430065677,
+      "speedup_vs_fgd": 9.5325414342792,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 25.083315895723093,
+          "gh_std": 0.8667352327262875,
+          "stranded_mean": 5.587360860820343,
+          "active_node_hr_mean": 1755.925864747714,
+          "latency_us_mean": 0.2300607619640381
+        },
+        "BestFit": {
+          "gh_mean": 24.743111876405713,
+          "gh_std": 1.1551475604530108,
+          "stranded_mean": 5.33348493085486,
+          "active_node_hr_mean": 1769.3388530988245,
+          "latency_us_mean": 8.04212391249509
+        },
+        "DotProduct": {
+          "gh_mean": 24.693137998284968,
+          "gh_std": 1.0820638568549577,
+          "stranded_mean": 5.478089454136578,
+          "active_node_hr_mean": 1774.806765019225,
+          "latency_us_mean": 12.516907459459823
+        },
+        "L2Norm": {
+          "gh_mean": 24.681614675393227,
+          "gh_std": 1.2403914500721134,
+          "stranded_mean": 5.225687251441128,
+          "active_node_hr_mean": 1758.0593276714535,
+          "latency_us_mean": 11.006019743680826
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 24.639490582039734,
+          "gh_std": 0.9604793393733819,
+          "stranded_mean": 5.45076746138353,
+          "active_node_hr_mean": 1827.394314418647,
+          "latency_us_mean": 321.32834359345753
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 24.66499885283027,
+          "gh_std": 1.342277571026243,
+          "stranded_mean": 5.023731275423205,
+          "active_node_hr_mean": 1760.0676393040296,
+          "latency_us_mean": 26.359289545324735
+        },
+        "B-LindyPack": {
+          "gh_mean": 24.447564879871287,
+          "gh_std": 1.1763681016516565,
+          "stranded_mean": 4.980177799146224,
+          "active_node_hr_mean": 1755.4406984705595,
+          "latency_us_mean": 33.70857035438154
+        }
+      }
+    },
+    "W3_Heavy_Straggler": {
+      "best_sota": "L2Norm",
+      "sota_gh": 2.723973542752829,
+      "b_lindy_gh": 2.655971105561465,
+      "b_noage_gh": 2.771819735261654,
+      "rel_improvement_pct": 2.496442646158784,
+      "wins": 6,
+      "num_seeds": 10,
+      "t_stat": 0.4617111801992119,
+      "p_val_approx": 0.6633407111489238,
+      "speedup_vs_fgd": 9.760781472436475,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 3.37931619541716,
+          "gh_std": 1.2557450842444025,
+          "stranded_mean": 13.797345234589281,
+          "active_node_hr_mean": 2879.6029317542234,
+          "latency_us_mean": 0.22382023159104655
+        },
+        "BestFit": {
+          "gh_mean": 3.152045203428959,
+          "gh_std": 1.3181624893985688,
+          "stranded_mean": 13.08844340090327,
+          "active_node_hr_mean": 3006.415895318972,
+          "latency_us_mean": 8.263454246655574
+        },
+        "DotProduct": {
+          "gh_mean": 3.3103760710195886,
+          "gh_std": 1.393874440658251,
+          "stranded_mean": 13.794959163519717,
+          "active_node_hr_mean": 3038.2442915121155,
+          "latency_us_mean": 12.51682451104052
+        },
+        "L2Norm": {
+          "gh_mean": 2.723973542752829,
+          "gh_std": 1.2792389351220166,
+          "stranded_mean": 12.491287234003426,
+          "active_node_hr_mean": 2978.03957959694,
+          "latency_us_mean": 10.798346101813546
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 6.358544297569311,
+          "gh_std": 1.1333135213436778,
+          "stranded_mean": 19.352107648640327,
+          "active_node_hr_mean": 3092.7492319732664,
+          "latency_us_mean": 326.3593036336819
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 2.771819735261654,
+          "gh_std": 1.175457640315901,
+          "stranded_mean": 12.367559987911772,
+          "active_node_hr_mean": 2966.693076526968,
+          "latency_us_mean": 26.416062241124262
+        },
+        "B-LindyPack": {
+          "gh_mean": 2.655971105561465,
+          "gh_std": 1.245719687485066,
+          "stranded_mean": 12.043034378790072,
+          "active_node_hr_mean": 2969.215807039004,
+          "latency_us_mean": 33.43577607543922
+        }
+      }
+    },
+    "W4_Memoryless_OOD": {
+      "best_sota": "FirstFit",
+      "sota_gh": 7.35611597369869,
+      "b_lindy_gh": 7.192784908297914,
+      "b_noage_gh": 7.430425484224195,
+      "rel_improvement_pct": 2.2203438062253955,
+      "wins": 7,
+      "num_seeds": 10,
+      "t_stat": 0.7694883982687404,
+      "p_val_approx": 0.4681572303756598,
+      "speedup_vs_fgd": 9.498940397784278,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 7.35611597369869,
+          "gh_std": 1.0471848821263265,
+          "stranded_mean": 13.985551638224612,
+          "active_node_hr_mean": 1745.8349858335991,
+          "latency_us_mean": 0.22945891702002896
+        },
+        "BestFit": {
+          "gh_mean": 7.552867098247735,
+          "gh_std": 1.111692136517316,
+          "stranded_mean": 14.819454097189716,
+          "active_node_hr_mean": 1755.4417562621134,
+          "latency_us_mean": 7.927767859056525
+        },
+        "DotProduct": {
+          "gh_mean": 7.806440080494016,
+          "gh_std": 1.2082653859580135,
+          "stranded_mean": 15.23838076941163,
+          "active_node_hr_mean": 1765.4901605599036,
+          "latency_us_mean": 12.34515256937513
+        },
+        "L2Norm": {
+          "gh_mean": 7.389272284775562,
+          "gh_std": 1.079731623011834,
+          "stranded_mean": 14.309996441071098,
+          "active_node_hr_mean": 1752.9435630855612,
+          "latency_us_mean": 10.43561331654141
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 14.2316588767811,
+          "gh_std": 1.3568649424045514,
+          "stranded_mean": 23.76147989508609,
+          "active_node_hr_mean": 1803.5314014193677,
+          "latency_us_mean": 310.7598605830909
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 7.430425484224195,
+          "gh_std": 0.8535371377075399,
+          "stranded_mean": 14.400428140685474,
+          "active_node_hr_mean": 1756.634127384575,
+          "latency_us_mean": 26.884274769951872
+        },
+        "B-LindyPack": {
+          "gh_mean": 7.192784908297914,
+          "gh_std": 1.232446546522495,
+          "stranded_mean": 14.197109298701179,
+          "active_node_hr_mean": 1758.458392324202,
+          "latency_us_mean": 32.71521323110721
+        }
+      }
+    },
+    "W5_Skewed_Vec_OOD": {
+      "best_sota": "BestFit",
+      "sota_gh": 9.134084029575158,
+      "b_lindy_gh": 8.812073884617119,
+      "b_noage_gh": 8.547129284223692,
+      "rel_improvement_pct": 3.5253687607362236,
+      "wins": 7,
+      "num_seeds": 10,
+      "t_stat": 1.1863739233518962,
+      "p_val_approx": 0.2633432358467309,
+      "speedup_vs_fgd": 10.249882944089446,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 9.82175980924964,
+          "gh_std": 1.6279509847841636,
+          "stranded_mean": 59.76838052188084,
+          "active_node_hr_mean": 2903.567402215137,
+          "latency_us_mean": 0.2136642205781331
+        },
+        "BestFit": {
+          "gh_mean": 9.134084029575158,
+          "gh_std": 2.0058925304160264,
+          "stranded_mean": 58.87353544854409,
+          "active_node_hr_mean": 2886.7004055969883,
+          "latency_us_mean": 8.215826106135097
+        },
+        "DotProduct": {
+          "gh_mean": 30.696448978145792,
+          "gh_std": 2.287527512900697,
+          "stranded_mean": 71.62556369718592,
+          "active_node_hr_mean": 3063.742725020238,
+          "latency_us_mean": 12.108791285484864
+        },
+        "L2Norm": {
+          "gh_mean": 9.149273159574138,
+          "gh_std": 2.0067795430202673,
+          "stranded_mean": 59.0253717455138,
+          "active_node_hr_mean": 2882.740529323759,
+          "latency_us_mean": 10.390789277586268
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 37.78916878163882,
+          "gh_std": 2.10587486971492,
+          "stranded_mean": 74.64989086260604,
+          "active_node_hr_mean": 3072.30988851611,
+          "latency_us_mean": 338.8983166341944
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 8.547129284223692,
+          "gh_std": 2.1997764509471143,
+          "stranded_mean": 58.67394079565857,
+          "active_node_hr_mean": 2889.7666051296633,
+          "latency_us_mean": 26.22128091430516
+        },
+        "B-LindyPack": {
+          "gh_mean": 8.812073884617119,
+          "gh_std": 1.5810760059467184,
+          "stranded_mean": 58.841465587456774,
+          "active_node_hr_mean": 2877.3614707915976,
+          "latency_us_mean": 33.063627992904905
+        }
+      }
+    },
+    "W6_Scale1024_OOD": {
+      "best_sota": "L2Norm",
+      "sota_gh": 0.8744462153353272,
+      "b_lindy_gh": 0.8287266259836631,
+      "b_noage_gh": 0.8348607638349572,
+      "rel_improvement_pct": 5.228404966465757,
+      "wins": 3,
+      "num_seeds": 5,
+      "t_stat": 0.8056759650440694,
+      "p_val_approx": 0.4853424019837021,
+      "speedup_vs_fgd": 9.304490685562614,
+      "all_schedulers": {
+        "FirstFit": {
+          "gh_mean": 0.9633282739289621,
+          "gh_std": 0.5899419893300748,
+          "stranded_mean": 5.051954350416264,
+          "active_node_hr_mean": 6707.712556176497,
+          "latency_us_mean": 0.22401523892641362
+        },
+        "BestFit": {
+          "gh_mean": 0.9050134244116949,
+          "gh_std": 0.46907734554778885,
+          "stranded_mean": 4.617587002840909,
+          "active_node_hr_mean": 6689.495689002829,
+          "latency_us_mean": 8.219165400743265
+        },
+        "DotProduct": {
+          "gh_mean": 0.9469580801574402,
+          "gh_std": 0.5537941612562521,
+          "stranded_mean": 4.766019723404712,
+          "active_node_hr_mean": 6711.584822780858,
+          "latency_us_mean": 12.515564859166222
+        },
+        "L2Norm": {
+          "gh_mean": 0.8744462153353272,
+          "gh_std": 0.4428533711115516,
+          "stranded_mean": 4.718308474146191,
+          "active_node_hr_mean": 6698.3829126288165,
+          "latency_us_mean": 10.681812841451025
+        },
+        "FGD_Adaptive": {
+          "gh_mean": 1.1080754434856999,
+          "gh_std": 0.6028479167496523,
+          "stranded_mean": 5.622579460470085,
+          "active_node_hr_mean": 6756.420704465316,
+          "latency_us_mean": 301.78268901266904
+        },
+        "B-Pack_NoAge": {
+          "gh_mean": 0.8348607638349572,
+          "gh_std": 0.4982753498248838,
+          "stranded_mean": 4.598245992288961,
+          "active_node_hr_mean": 6699.026308779939,
+          "latency_us_mean": 26.698919311094187
+        },
+        "B-LindyPack": {
+          "gh_mean": 0.8287266259836631,
+          "gh_std": 0.484081412175018,
+          "stranded_mean": 4.47966557359671,
+          "active_node_hr_mean": 6680.5025800848725,
+          "latency_us_mean": 32.43409007662639
+        }
+      }
+    }
+  }
+}
