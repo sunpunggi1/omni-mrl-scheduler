@@ -1,6 +1,8 @@
 # `Omni-MRL` (v11.1) / `Omni-Lindy`: Non-Clairvoyant Spatio-Temporal, Bidirectional Hazard, Heterogeneous & Topology-Aware AI GPU Scheduler
 
-> **English Paper**: [paper/omni_lindy_paper_en.md](./paper/omni_lindy_paper_en.md) · **한국어 논문**: [paper/omni_lindy_paper.md](./paper/omni_lindy_paper.md) · **Cite**: [CITATION.cff](./CITATION.cff) · **License**: [MIT](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24442169.svg)](https://doi.org/10.5281/zenodo.24442169)
+
+> **English Paper**: [paper/omni_lindy_paper_en.md](./paper/omni_lindy_paper_en.md) · **한국어 논문**: [paper/omni_lindy_paper.md](./paper/omni_lindy_paper.md) · **DOI**: [10.5281/zenodo.24442169](https://doi.org/10.5281/zenodo.24442169) · **Cite**: [CITATION.cff](./CITATION.cff) · **License**: [MIT](./LICENSE)
 
 **`Omni-MRL` (v11.1)** is a strictly non-clairvoyant (Zero-ML, Zero-Migration) AI GPU cluster scheduler and **Kubernetes v1.34 HTTP Extender prototype** that unifies discrete GPU boundary preservation, inspection-paradox bidirectional hazard gating (DFR/IFR), same-entry cohort Kaplan-Meier MRL reclamation with guaranteed non-negative tail hazard ($\hat{R}'(u)\ge -1$), heterogeneous `Max-of-N` attenuation, and rack-topology locality in $O(N)$ per decision.
 

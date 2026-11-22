@@ -4,6 +4,7 @@ type: software
 title: "Omni-MRL (v11.1) / Omni-Lindy: Non-Clairvoyant Spatio-Temporal, Bidirectional Hazard, Heterogeneous, and Topology-Aware AI GPU Cluster Scheduler"
 version: "11.1.0"
 date-released: "2026-11-22"
+doi: "10.5281/zenodo.24442169"
 authors:
   - alias: "sunpunggi1"
 repository-code: "https://github.com/sunpunggi1/omni-mrl-scheduler"
