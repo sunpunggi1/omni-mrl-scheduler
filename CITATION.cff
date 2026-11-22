@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or paper in your research, please cite it as below."
+type: software
+title: "Omni-MRL (v11.1) / Omni-Lindy: Non-Clairvoyant Spatio-Temporal, Bidirectional Hazard, Heterogeneous, and Topology-Aware AI GPU Cluster Scheduler"
+version: "11.1.0"
+date-released: "2026-11-22"
+authors:
+  - alias: "sunpunggi1"
+repository-code: "https://github.com/sunpunggi1/omni-mrl-scheduler"
+url: "https://github.com/sunpunggi1/omni-mrl-scheduler"
+license: MIT
+keywords:
+  - gpu-scheduling
+  - kubernetes
+  - ml-systems
+  - ai-infrastructure
+  - survival-analysis
+  - non-clairvoyant-scheduling
+  - cluster-traces
+abstract: >-
+  Omni-MRL (v11.1) is a strictly non-clairvoyant (Zero-ML, Zero-Migration) AI/GPU cluster
+  scheduler and Kubernetes v1.34 HTTP Extender prototype unifying discrete boundary protection,
+  inspection-paradox bidirectional hazard gating (DFR/IFR), same-entry cohort Kaplan-Meier MRL
+  reclamation with guaranteed non-negative tail hazard rate (R'(u) >= -1), heterogeneous
+  Max-of-N attenuation, and rack-topology preservation. Evaluated on Lockbox 30-seed factorials,
+  bias-corrected dual-oracle ML crossovers, and a 40.5M-job multi-trace empirical regime audit
+  across Alibaba GPU-v2026, AcmeTrace Kalos, SenseTime Helios, and Alibaba PAI 2023.
