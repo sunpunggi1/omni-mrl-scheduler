@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "omni-lindy-scheduler"
 version = "11.1.0"
-description = "Omni-MRL (v11.1) / Omni-Lindy: 동적 AI/GPU 클러스터 시공간·해저드·이기종·토폴로지 통합 스케줄러 및 Kubernetes HTTP Extender"
+description = "Omni-MRL (v11.1) / Omni-Lindy: Non-Clairvoyant Spatio-Temporal, Bidirectional Hazard, Heterogeneous & Topology-Aware AI GPU Scheduler + K8s Extender"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"

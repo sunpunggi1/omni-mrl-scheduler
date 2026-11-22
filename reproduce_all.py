@@ -398,11 +398,11 @@ def verify_json_and_paper_consistency() -> None:
         model_nodes[m] = model_nodes.get(m, 0) + 1
         model_gpus[m] = model_gpus.get(m, 0) + g
 
-    sec41 = _find_section(sections, "4.1 단계별 파라미터 동결")
-    assert f"{tot_nodes:,} 노드, {tot_gpus:,} 물리 GPU" in sec41, "Alibaba CSV 총 노드/GPU 수 불일치"
+    sec41 = _find_section(sections, "4.1 Parameter Freezing")
+    assert f"{tot_nodes:,} nodes, {tot_gpus:,} physical GPUs" in sec41, "Alibaba CSV 총 노드/GPU 수 불일치"
     for m in ("G2", "T4", "P100", "V100M16", "G3", "V100M32", "A10"):
-        tok = f"**{m}** {model_nodes[m]}노드"
-        assert tok in sec41 and f"{model_gpus[m]:,} GPU" in sec41, f"Alibaba {m} 기종 집계 불일치"
+        tok = f"**{m}** {model_nodes[m]} nodes"
+        assert tok in sec41 and f"{model_gpus[m]:,} GPUs" in sec41, f"Alibaba {m} 기종 집계 불일치"
 
     # 2) Phase 11 원자료 기반 통계 재계산 검증
     p11 = loaded["phase11_report.json"]
@@ -419,7 +419,7 @@ def verify_json_and_paper_consistency() -> None:
 
     # 3-a) Phase 1 / Phase 4 theta / Phase 5 / Phase 7 / Phase 8 / Phase 9 / Phase 10 핵심 표·문맥 검증
     fb = loaded["final_b_lindy_report.json"]
-    sec31 = _find_section(sections, "3.1 진화적 수식 발견")
+    sec31 = _find_section(sections, "3.1 Evolutionary Formula")
     for th_k in ("w_res", "w_imb", "w_pristine", "w_b4", "w_whole", "w_lindy", "tau"):
         assert f"{fb['theta'][th_k]}" in sec31, f"3.1절 theta[{th_k}] 불일치"
 
@@ -428,14 +428,14 @@ def verify_json_and_paper_consistency() -> None:
     assert f"{br['W1_PAI_Mixed']['FGD_Adaptive']['gpu_hour_block_mean']:.3f}%" in _table_row_lookup(t_p1, "W1_PAI_Mixed")[6]
     assert f"{br['W5_Skewed_Vec_OOD']['FGD_Adaptive']['gpu_hour_block_mean']:.3f}%" in _table_row_lookup(t_p1, "W5_Skewed_Vec_OOD")[6]
 
-    sec51 = _find_section(sections, "5.1 합성 30-시드")
+    sec51 = _find_section(sections, "5.1 Synthetic 30-Seed")
     t_p5 = _parse_tables(sec51)[0]
     assert f"{p5['workloads']['W1_PAI_Mixed']['blocking_30']['scheduler_stats']['Adaptive-B-Lindy']['mean']:.3f}%" in _table_row_lookup(t_p5, "W1_PAI_Mixed")[4]
     assert f"{p5['workloads']['W3_Heavy_Straggler']['blocking_30']['scheduler_stats']['Adaptive-B-Lindy']['mean']:.3f}%" in _table_row_lookup(t_p5, "W3_Heavy_Straggler")[4]
     assert f"{p5['pooled_180_summary']['blocking_vs_best_sota']['wins']}/176" in sec51
-    assert f"{rt['scenarios']['Helios_Pooled_20']['schedulers']['Adaptive-B-Lindy']['blk_gh_mean']:.3f}%" in _find_section(sections, "(2) Helios 단일노드")
+    assert f"{rt['scenarios']['Helios_Pooled_20']['schedulers']['Adaptive-B-Lindy']['blk_gh_mean']:.3f}%" in _find_section(sections, "(2) Helios Single-Node")
 
-    sec52_2 = _find_section(sections, "(2) Helios 단일노드")
+    sec52_2 = _find_section(sections, "(2) Helios Single-Node")
     t_p7_hel = _parse_tables(sec52_2)[0]
     assert f"{p7['part_b_helios']['HeliosMN_Pooled_20']['schedulers']['Omni-Lindy']['blk_gh_mean']:.3f}%" in _table_row_lookup(t_p7_hel, "Omni-Lindy")[1]
 
@@ -549,7 +549,7 @@ def verify_json_and_paper_consistency() -> None:
 
     # 3-e2) Phase 11.1 8.4.5절 4개 공개 트레이스(Alibaba GPU-v2026 4,052만 건 포함) 전수 감사 표 대조
     era = loaded["empirical_regime_audit.json"]
-    sec84_5 = _find_section(sections, "8.4.5 대규모 실트레이스")
+    sec84_5 = _find_section(sections, "8.4.5 Large-Scale Real-Trace")
     t_era = _parse_tables(sec84_5)[0]
     ali26_g = era["distributions"]["alibaba_2026"]["global"]
     row_a26 = _table_row_lookup(t_era, "Alibaba GPU-v2026")
@@ -561,11 +561,11 @@ def verify_json_and_paper_consistency() -> None:
 
     # 3-f) 요약·서론·9.2절·부록 문맥 일관성 검사
     sec_abs = _find_section(sections, "`Omni-Lindy` / `Omni-MRL`")
-    assert "96개" in sec_abs and "6,212" in sec_abs and "61개" in sec_abs
-    sec92 = _find_section(sections, "9.2 라이브 HTTP")
+    assert "96" in sec_abs and "6,212" in sec_abs and "61" in sec_abs
+    sec92 = _find_section(sections, "9.2 Live HTTP")
     assert "61/61" in sec92
-    sec_app = _find_section(sections, "11. 재현성 부록")
-    assert "61개 테스트" in sec_app and "10종" in sec_app
+    sec_app = _find_section(sections, "11. Artifact")
+    assert "61 tests" in sec_app and "10 JSON" in sec_app
 
     print(
         f"  -> Alibaba CSV(1,213노드/6,212 GPU) + 10종 JSON + Lockbox raw 통계 재계산 + "
